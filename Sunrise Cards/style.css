@@ -25,7 +25,7 @@ body {
       overflow-x: hidden;
 }
 
-.img1, .img2, .img3, .img4{
+.section1{
       position: relative;
       opacity: 0.70;
       background-position: center;
@@ -34,7 +34,16 @@ body {
       background-attachment: fixed;
 }
 
-.img1{
+.img2, .img3, .img4{
+      position: relative;
+      opacity: 0.70;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+}
+
+.section1{
       background-image: url('background.jpg');
       min-height: 100%;
 }
@@ -66,7 +75,6 @@ body {
       font-size: 12px;
 }
 
-
 .text{
       position: absolute;
       top: 50%;
@@ -87,17 +95,17 @@ body {
 @media(max-width: 550px){
       .img1, .img2, .img3, .img4{
             background-attachment: scroll;
-      }
-      
+      } 
 }
 
 nav {
-      padding: 8px;
+      margin-top: 0px;
 }
 
 .logo {
-      display: block;
-      margin: auto;
+      position: absolute;
+      left: 30%;
+      top: 30%;
 }
 
 nav ul {
@@ -128,7 +136,7 @@ nav ul li a {
       font-weight: 600;
 }
 
-@media screen and (max-width: 864px) {
+@media screen and (max-width: 850px) {
       .logo {
             padding: 0;
       }
@@ -199,7 +207,7 @@ nav ul li a {
             width: 48px;
             height: 48px;
             cursor: pointer;
-            z-index: 9999;
+            z-index: 9998;
             border-radius: 50%;
       }
 
@@ -262,9 +270,6 @@ nav ul li a {
 }
 
 .video{
-      position: absolute;
-      min-width: 100%;
-      min-height: 100%;
-      width: auto;
+      width: 100%;
       height: auto;
 }
