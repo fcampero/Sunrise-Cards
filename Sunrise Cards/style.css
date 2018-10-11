@@ -6,8 +6,8 @@ html {
       margin: 0;
       padding: 0;
       width: 100%;
-      height: 100vh;
-      background: url(background);
+      height: 100%;
+      background-color: whitesmoke;
 }
 
 @font-face{
@@ -19,12 +19,76 @@ body {
       margin: 0;
       padding: 0;
       width: 100%;
-      height: 100vh;
+      height: 100%;
       font-family: LemonMilk;
       font-weight: 400;
-      background: url(background.jpg);
+      overflow-x: hidden;
+}
+
+.img1, .img2, .img3, .img4{
+      position: relative;
+      opacity: 0.70;
       background-position: center;
       background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+}
+
+.img1{
+      background-image: url('background.jpg');
+      min-height: 100%;
+}
+
+.img2{
+      background-image: url('As Espadas.jpg');
+      min-height: 400px;
+}
+
+.img3{
+      background-image: url('Foto Move.jpg');
+      min-height: 400px;
+}
+
+.img4{
+      background-image: url('jacks.jpg');
+      min-height: 400px;
+}
+
+.section{
+      text-align: center;
+      padding: 50px 80px;
+}
+
+.section{
+      background-color: white;
+      color: #666;
+      letter-spacing: 4px;
+      font-size: 12px;
+}
+
+
+.text{
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      text-align: center;
+      color: #666;
+      font-size: 25px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+}
+
+.text .bordertrans{
+      opacity: 0.5;
+      color: #fff;
+      padding: 20px;
+}
+
+@media(max-width: 550px){
+      .img1, .img2, .img3, .img4{
+            background-attachment: scroll;
+      }
+      
 }
 
 nav {
@@ -32,10 +96,8 @@ nav {
 }
 
 .logo {
-      float: left;
-      padding: 0px;
-      margin-left: 5px;
-      margin-top: 0px;
+      display: block;
+      margin: auto;
 }
 
 nav ul {
@@ -199,8 +261,10 @@ nav ul li a {
       display: none;
 }
 
-.imagenes{
-      height: 100px;
-      width: 100px;
-      object-fit: cover;
+.video{
+      position: absolute;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
 }
